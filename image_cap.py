@@ -14,8 +14,7 @@ img_path = "snow-leopard.png"
 image = Image.open(img_path).convert('RGB')
 
 
-#3.
-# You do not need a question for image captioning
+#3. Process the image
 text = "the image of"
 inputs = processor(images=image, text=text, return_tensors="pt")
 
